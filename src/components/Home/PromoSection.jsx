@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { imagePaths, fallbackImages } from '/Users/sumyatnoe/AisolutionWebsite/frontend/src/config/images.js';
+import { imagePaths, fallbackImages } from '../../config/images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faUsers, faChartLine, faAward } from '@fortawesome/free-solid-svg-icons';
 
