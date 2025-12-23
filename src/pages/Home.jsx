@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Home/Hero';
 import { useLocation } from 'react-router-dom';
@@ -29,9 +29,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 
-
+  
 const Home = () => {
- 
+ const [selectedSolution, setSelectedSolution] = useState(null);
   const features = [
     {
       icon: faRobot,
@@ -99,6 +99,10 @@ const Home = () => {
           },
       
     ];
+   
+   
+
+    
   
 
   const testimonials = [
@@ -675,11 +679,11 @@ const Home = () => {
         
         {/* CTA */}
         <div className="flex flex-col sm:flex-row gap-4">
-         <Link 
-  to="/contact?project=healthcare-ai"
+        <Link 
+  to="/industries"
   className="bg-royal-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg hover:shadow-xl inline-block text-center"
 >
-  View Detail Case Study 
+  View Similar Solutions
 </Link>
           <Link 
   to="/contact?category=healthcare"
@@ -775,9 +779,12 @@ const Home = () => {
         
         
         <div className="flex flex-col sm:flex-row gap-4">
-          <button className="bg-gray-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition duration-300 shadow-lg hover:shadow-xl">
-            View Detail Case Study
-          </button>
+           <Link 
+  to="/industries"
+  className="bg-royal-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg hover:shadow-xl inline-block text-center"
+>
+  View Similar Solutions
+</Link>
           <button className="bg-white border-2 border-gray-300 text-gray-800 px-8 py-3 rounded-lg font-semibold hover:border-gray-600 hover:text-gray-600 transition duration-300">
             Contact Us 
           </button>
