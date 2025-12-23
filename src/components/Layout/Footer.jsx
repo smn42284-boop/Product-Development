@@ -48,8 +48,7 @@ const Footer = () => {
                   Articles
                 </Link>
               </li>
-              {/* ADD ADMIN LINK HERE */}
-              
+            
             </ul>
           </div>
 
