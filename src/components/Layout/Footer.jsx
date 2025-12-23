@@ -49,12 +49,7 @@ const Footer = () => {
                 </Link>
               </li>
               {/* ADD ADMIN LINK HERE */}
-              <li>
-                <Link to="/admin" className="text-gray-400 hover:text-white transition duration-300 flex items-center">
-                  <FontAwesomeIcon icon={faLock} className="mr-2 text-sm" />
-                  Admin Login
-                </Link>
-              </li>
+              
             </ul>
           </div>
 
