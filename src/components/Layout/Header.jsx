@@ -51,11 +51,16 @@ const Header = () => {
             ))}
           </nav>
           <div className="hidden md:flex items-center space-x-4">
-            <Link
-              to="/contact"
-              className="bg-white text-royal-blue border-2 border-black px-6 py-2 rounded-lg font-medium hover:border-white-700 transition duration-300"
-            >
-              Contact
+           <Link
+  to="/contact"
+  className={`px-6 py-2 rounded-lg font-medium border-2 transition duration-300 ${
+    location.pathname === '/contact'
+      ? 'bg-royal-blue text-white border-royal-blue'
+      : 'bg-white text-royal-blue border-black hover:bg-royal-blue hover:text-white'
+  }`}
+>
+  Contact
+</Link>
             </Link>
           </div>
           <button
